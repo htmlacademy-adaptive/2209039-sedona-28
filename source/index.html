@@ -7,10 +7,15 @@
   <body class="page-body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img src="../source/img/logo.png" alt="Логотип Седоны." width="185" height="96">
+        <img src="./img/logo.svg" alt="Логотип Седоны." width="185" height="96">
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">
+          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+            <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+            <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+          </svg>
           <span class="visually-hidden">Меню</span>
         </button>
         <div class="main-navigation__wrapper">
@@ -34,7 +39,8 @@
     <main class="main-container">
       <h1 class="visually-hidden">Городок Седона</h1>
       <div class="hero-block">
-        <img class="hero-block__image" src="../source/img/index/welcome-image.png" width="282" height="214" alt="Wlecome to the gorgeous SEDONA. Because the Grand Canyon sucks!">
+        <img class="hero-block__image" src="./img/index/welcome-image.svg" width="282" height="214" alt="Wlecome to the gorgeous SEDONA. Because the Grand Canyon sucks!">
+        <span class="hero-block__triangles"></span>
       </div>
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -44,32 +50,32 @@
           </header>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <b class="advantages__headline">НАСТОЯЩИЙ ГОРОДОК</b>
-              <span class="advantages__number">— №1 —</span>
-              <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            </li>
-            <li class="advantages__item advantages__item--image">
-              <img class="advantages__image" src="../source/img/index/photo-city-1.jpg" width="320" height="260" alt=" Седона. Городской пейзаж.">
-            </li>
-            <li class="advantages__item advantages__item--apartments">
-              <b class="advantages__headline advantages__headline--in-town">Жилье</b>
-              <p class="advantages__description advantages__description--in-town">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
-            <li class="advantages__item advantages__item--food">
-              <b class="advantages__headline advantages__headline--in-town">ЕДА</b>
-              <p class="advantages__description advantages__description--in-town">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-            </li>
-            <li class="advantages__item advantages__item--souvenirs">
-              <b class="advantages__headline advantages__headline--in-town">СУВЕНИРЫ</b>
-              <p class="advantages__description advantages__description--in-town">Не только китайского, но и местного производства!</p>
+              <div class="advantages__container">
+                <b class="advantages__headline">НАСТОЯЩИЙ ГОРОДОК</b>
+                <span class="advantages__number">— №1 —</span>
+                <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              </div>
+              <img class="advantages__image" src="./img/index/photo-city-1.jpg" width="320" height="260" alt=" Седона. Городской пейзаж.">
+              <ul class="advantages__inner-list inner-list">
+                <li class="inner-list__item inner-list__item--apartments">
+                  <b class="inner-list__headline inner-list__headline--in-town">Жилье</b>
+                  <p class="inner-list__description inner-list__description--in-town">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="inner-list__item inner-list__item--food">
+                  <b class="inner-list__headline inner-list__headline--in-town">ЕДА</b>
+                  <p class="inner-list__description inner-list__description--in-town">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                </li>
+                <li class="inner-list__item inner-list__item--souvenirs">
+                  <b class="inner-list__headline inner-list__headline--in-town">СУВЕНИРЫ</b>
+                  <p class="inner-list__description inner-list__description--in-town">Не только китайского, но и местного производства!</p>
+                </li>
+              </ul>
             </li>
             <li class="advantages__item">
-              <b class="advantages__headline"></b>
-              <span class="advantages__number"></span>
-              <p class="advantages__description"></p>
-            </li>
-            <li class="advantages__item advantages__item--image">
-              <img class="advantages__image" src="../source/img/index/photo-city-2.jpg" width="320" height="260" alt=" Седона. Мост Дьявола.">
+              <b class="advantages__headline">ТАМ ЕСТЬ Мост дьявола</b>
+              <span class="advantages__number">— №2 —</span>
+              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <img class="advantages__image" src="./img/index/photo-city-2.jpg" width="320" height="260" alt=" Седона. Мост Дьявола.">
             </li>
             <li class="advantages__item advantages__item--environment">
               <b class="advantages__headline advantages__headline--environment">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
@@ -127,7 +133,7 @@
           <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
             Разработано
             <span class="visually-hidden">htmlacademy</span>
-            <img class="copyright__logo" src="../source/img/htmlacademy.svg" alt="Логотип htmlacademy." width="27" height="34">
+            <img class="copyright__logo" src="./img/htmlacademy.svg" alt="Логотип htmlacademy." width="27" height="34">
           </a>
         </div>
       </div>
