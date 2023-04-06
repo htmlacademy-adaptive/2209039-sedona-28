@@ -1,0 +1,16 @@
+.main-navigation {
+  width: 100%;
+}
+
+.main-navigation__list {
+  @include list-reset;
+}
+
+.main-navigation__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: $page-background;
+  background-color: $common-style;
+}
