@@ -1,0 +1,63 @@
+.advantages__slogan {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages__intro {
+  font-size: 14px;
+  color: $description-text;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__container {
+  background-color: $common-style;
+}
+
+.advantages__headline {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $page-background;
+}
+
+.advantages__headline--environment {
+  color: $main-text;
+}
+
+.advantages__number {
+  font-size: 14px;
+  color: $page-background;
+}
+
+.advantages__number--environment {
+  color: $description-text;
+}
+
+.advantages__description {
+  margin: 0;
+  text-transform: uppercase;
+  color: $page-background;
+  font-size: 14px;
+}
+
+.advantages__description--environment {
+  color: $description-text;
+}
+
+.advantages__inner-list {
+  @include list-reset;
+}
+
+.advantages__item--environment {
+  background-color: #eeeeee;
+}

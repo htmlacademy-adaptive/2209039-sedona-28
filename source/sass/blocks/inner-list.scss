@@ -1,0 +1,26 @@
+.inner-list__item--apartments {
+  background-image: url("../../img/index/house-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.inner-list__item--food {
+  background-image: url("../../img/index/food-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.inner-list__item--souvenirs {
+  background-image: url("../../img/index/gift-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.inner-list__headline {
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.inner-list__description {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $description-text;
+}

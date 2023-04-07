@@ -1,9 +1,18 @@
-// базовые стили, миксины, переменные и шрифты
-@use "./base/base.scss";
-@use "./base/fonts.scss";
-@use "./variables.scss";
-@use "./base/mixins.scss";
+// базовые стили, шрифты, миксины, переменные
+@import "./base/base.scss";
+@import "./base/fonts.scss";
+@import "./mixins.scss";
+@import "./variables.scss";
 
 // стилевые блоки
-@use "./blocks/main-header.scss";
-@use "./blocks/main-navigation.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/hero-block.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/inner-list.scss";
+@import "./blocks/booking.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
