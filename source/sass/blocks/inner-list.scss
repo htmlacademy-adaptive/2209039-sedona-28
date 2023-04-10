@@ -1,3 +1,8 @@
+.inner-list {
+  @include list-reset;
+  padding: 25px 18px 46px;
+}
+
 .inner-list__item--apartments {
   background-image: url("../../img/index/house-icon.svg");
   background-repeat: no-repeat;

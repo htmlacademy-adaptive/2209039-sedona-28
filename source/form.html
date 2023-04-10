@@ -7,35 +7,37 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <a class="main-header__logo" href="./index.html">
-        <img src="./img/logo.svg" alt="Логотип Седоны." width="185" height="96">
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden">Меню</span>
-          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
-            <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
-            <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
-          </svg>
-        </button>
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="./index.html">Главная</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="./catalog.html">ФОТО И ВИДЕО</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Форма отзыва</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">HTML ACADEMY</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="./index.html">
+          <img src="./img/logo.svg" alt="Логотип Седоны." width="185" height="96">
+        </a>
+        <nav class="main-navigation">
+          <button class="main-navigation__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+            </svg>
+          </button>
+          <div class="main-navigation__wrapper">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="./index.html">Главная</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="./catalog.html">ФОТО И ВИДЕО</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="./form.html">Форма отзыва</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">HTML ACADEMY</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main-container main-form">
       <div class="main-form__hero-block hero-block">
@@ -43,63 +45,65 @@
         <span class="hero-block__triangles"></span>
       </div>
       <section class="main-form__section">
-        <h1 class="main-form__headline">Оставьте свой отзыв</h1>
-        <p class="main-form__intro-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-          <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="form__name">
-              <legend class="form__title">Представьтесь:</legend>
+        <div class="main-form__header form-header">
+          <h1 class="main-form__headline">Оставьте свой отзыв</h1>
+          <p class="main-form__intro-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form__fieldset form__fieldset--name">
+              <h2 class="form__title">Представьтесь:</h2>
               <label class="form__label" for="first-name">ИМЯ*:</label>
               <input class="form__input" type="text" name="first-name" id="first-name" placeholder="Имя" required>
               <label class="form__label" for="last-name">ФАМИЛИЯ*:</label>
               <input class="form__input" type="text" name="last-name" id="last-name" placeholder="Фамилия" required>
               <label class="form__label" for="patronymic">Отчество:</label>
               <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Отчество">
-            </fieldset>
-            <fieldset class="form__contacts">
-              <legend class="form__title">Контактная информация:</legend>
+            </div>
+            <div class="form__fieldset form__fieldset--contacts">
+              <h2 class="form__title">Контактная информация:</h2>
               <label class="form__label" for="phone">Контактный телефон*:</label>
-              <input class="form__input phone-input" type="number" name="phone" id="phone" required>
+              <input class="form__input phone-input" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
               <label class="form__label" for="email">Электронная почта*:</label>
-              <input class="form__input email-input" type="email" name="email" id="email" required>
-            </fieldset>
-            <fieldset class="form__impression">
-              <legend class="form__title">ВАше Общее впечатление:</legend>
+              <input class="form__input email-input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+            </div>
+            <div class="form__fieldset form__fieldset--impression">
+              <h2 class="form__title">ВАше Общее впечатление:</h2>
               <label class="form__check-label radio-label">
                 <input class="form__questionnaire radio" type="radio" name="impression-evaluation" value="positive" checked>
                 Скорее положительное
               </label>
-              <label>
+              <label class="form__check-label radio-label">
                 <input class="form__questionnaire radio" type="radio" name="impression-evaluation" value="negative">
                 Скорее отрицательное
               </label>
-              <label>
+              <label class="form__check-label radio-label">
                 <input class="form__questionnaire radio" type="radio" name="impression-evaluation" value="difficult to answer">
                 Затрудняюсь ответить
               </label>
-            </fieldset>
-            <fieldset class="form__sightseeing">
-              <legend class="form__title">посещенные достопримечательности:</legend>
-              <label class="form__questionnaire">
+            </div>
+            <div class="form__fieldset form__fieldset--sightseeing">
+              <h2 class="form__title">посещенные достопримечательности:</h2>
+              <label class="form__check-label">
                 <input class="form__questionnaire checkbox" type="checkbox" name="visited-sightseeing" value="Мост Дьявола" checked>
                 Мост Дьявола
               </label>
-              <label class="form__questionnaire">
+              <label class="form__check-label">
                 <input class="form__questionnaire checkbox" type="checkbox" name="visited-sightseeing" value="Гора-Колокол" checked>
                 Гора-Колокол
               </label>
-              <label class="form__questionnaire">
+              <label class="form__check-label">
                 <input class="form__questionnaire checkbox" type="checkbox" name="visited-sightseeing" value="Слайд-парк" checked>
                 Слайд-парк
               </label>
-              <label class="form__questionnaire">
+              <label class="form__check-label">
                 <input class="form__questionnaire checkbox" type="checkbox" name="visited-sightseeing" value="Красные скалы">
                 Красные скалы
               </label>
-            </fieldset>
-            <fieldset class="form__emotions">
-              <legend class="form__title">Опишите свои эмоции:</legend>
+            </div>
+            <div class="form__fieldset form__fieldset--emotions">
+              <h2 class="form__title">Опишите свои эмоции:</h2>
               <textarea class="form__emotions-description" name="Эмоции от посещения Седоны" id="emotions-description" cols="30" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
-            </fieldset>
+            </div>
             <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
             <small class="form__legend">* — обязательные поля</small>
           </form>
@@ -146,18 +150,20 @@
       </div>
     </footer>
     <div class="modal">
-      <div class="modal__error error">
-        <b class="error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
-        <p class="error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
+      <div class="modal__window error">
+        <b class="modal__title error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
         </p>
-        <button class="error__button button" type="button">OK</button>
+        <button class="modal__button button" type="button">OK</button>
       </div>
     </div>
     <div class="modal">
-      <div class="modal__success success">
-        <b class="success__title">Ваш отзыв отправлен!</b>
-        <p class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="success__button button" type="button">ЗАкРЫТЬ ОКНО</button>
+      <div class="modal__window success">
+        <b class="modal__title">Ваш отзыв отправлен!</b>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal__button-area">
+          <button class="modal__button button" type="button">ЗАкРЫТЬ ОКНО</button>
+        </div>
       </div>
     </div>
   </body>
