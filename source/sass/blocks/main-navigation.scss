@@ -1,0 +1,28 @@
+.main-navigation {
+  width: 100%;
+}
+
+.main-navigation__wrapper {
+  width: 100%;
+}
+
+.main-navigation__toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.main-navigation__list {
+  @include list-reset;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.main-navigation__link {
+  width: 100%;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: $page-background;
+  background-color: $common-style;
+  text-decoration: none;
+}

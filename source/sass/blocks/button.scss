@@ -1,0 +1,12 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $page-background;
+  background-color: $common-style;
+  border: none;
+  cursor: pointer;
+}

@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+// базовые стили, шрифты, миксины, переменные
+@import "./base/base.scss";
+@import "./base/fonts.scss";
+@import "./mixins.scss";
+@import "./variables.scss";
+
+// стилевые блоки index
+@import "./blocks/main-header.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/hero-block.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/inner-list.scss";
+@import "./blocks/booking.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+
+// стилевые блоки catalog
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-photo.scss";
+
+
+// стилевые блоки form
+@import "./blocks/main-form.scss";
+@import "./blocks/form.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/form-header.scss";

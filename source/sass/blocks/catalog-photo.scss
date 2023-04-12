@@ -1,0 +1,24 @@
+.catalog-photo__list {
+  @include list-reset;
+}
+
+.catalog-photo__title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.catalog-photo__author {
+  font-size: 14px;
+  color: $description-text;
+}
+
+.catalog-photo__like-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.catalog-photo__like-quantity {
+  font-weight: 700;
+  font-size: 14px;
+}

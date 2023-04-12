@@ -1,0 +1,23 @@
+.modal__window {
+  padding: 45px 41px 35px;
+}
+
+.modal__title {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__text {
+  margin: 0;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $description-text;
+}
+
+.modal__button-area {
+  padding: 20px;
+  background-color: $input-background;
+}

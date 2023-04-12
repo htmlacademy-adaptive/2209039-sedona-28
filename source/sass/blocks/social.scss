@@ -1,0 +1,13 @@
+.social__list {
+  @include list-reset;
+  display: flex;
+  gap: 6px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 48px;
+  min-height: 48px;
+}

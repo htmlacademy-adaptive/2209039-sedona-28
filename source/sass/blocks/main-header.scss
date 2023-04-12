@@ -1,0 +1,13 @@
+.main-header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main-header__wrapper {
+  background-color: $page-background;
+}
+
+.main-header__logo {
+  margin: 0 auto;
+}
