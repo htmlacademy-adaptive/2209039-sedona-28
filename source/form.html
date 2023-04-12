@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -50,7 +51,8 @@
           <p class="main-form__intro-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="form__fieldset form__fieldset--name">
+          <div class="form__container">
+          <div class="form__fieldset form__fieldset--name">
               <h2 class="form__title">Представьтесь:</h2>
               <label class="form__label" for="first-name">ИМЯ*:</label>
               <input class="form__input" type="text" name="first-name" id="first-name" placeholder="Имя" required>
@@ -66,6 +68,7 @@
               <label class="form__label" for="email">Электронная почта*:</label>
               <input class="form__input email-input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
             </div>
+          </div>
             <div class="form__fieldset form__fieldset--impression">
               <h2 class="form__title">ВАше Общее впечатление:</h2>
               <label class="form__check-label radio-label">
@@ -104,14 +107,16 @@
               <h2 class="form__title">Опишите свои эмоции:</h2>
               <textarea class="form__emotions-description" name="Эмоции от посещения Седоны" id="emotions-description" cols="30" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
             </div>
-            <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-            <small class="form__legend">* — обязательные поля</small>
+            <div class="form__send-container">
+              <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+              <small class="form__legend">* — обязательные поля</small>
+            </div>
           </form>
         </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag"></div>
+        <div class="main-footer__hashtag">#visitSEDONA</div>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -150,15 +155,15 @@
       </div>
     </footer>
     <div class="modal">
-      <div class="modal__window error">
-        <b class="modal__title error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+      <div class="modal__window modal__window--error">
+        <b class="modal__title">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
         <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
         </p>
         <button class="modal__button button" type="button">OK</button>
       </div>
     </div>
     <div class="modal">
-      <div class="modal__window success">
+      <div class="modal__window modal__window--success">
         <b class="modal__title">Ваш отзыв отправлен!</b>
         <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
         <div class="modal__button-area">

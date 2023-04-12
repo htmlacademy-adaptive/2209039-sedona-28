@@ -1,5 +1,8 @@
 .booking__wrapper {
-  padding: 38px 0 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 18px 49px;
 }
 
 .booking__headline {
@@ -8,9 +11,21 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .booking__text {
   margin: 0;
   color: $description-text;
+}
+
+.booking__map-container {
+  width: 100%;
+}
+
+.booking__map {
+  width: 100%;
 }

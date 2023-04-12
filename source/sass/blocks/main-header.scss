@@ -1,13 +1,26 @@
 .main-header {
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .main-header__wrapper {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
   background-color: $page-background;
 }
 
 .main-header__logo {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
