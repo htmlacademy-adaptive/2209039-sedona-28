@@ -1,6 +1,11 @@
 .inner-list {
   @include list-reset;
   padding: 25px 18px 46px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .inner-list__item--apartments {
@@ -21,6 +26,10 @@
 .inner-list__headline {
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .inner-list__description {

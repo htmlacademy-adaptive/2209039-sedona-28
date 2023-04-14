@@ -3,18 +3,34 @@
 }
 
 .main-navigation__wrapper {
-  width: 100%;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .main-navigation__toggle {
-  background-color: transparent;
-  border: none;
+  display: none;
+
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+  }
 }
 
 .main-navigation__list {
   @include list-reset;
   width: 100%;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-width: 768px;
+    max-width: 1200px;
+    flex-direction: row;
+  }
 }
 
 .main-navigation__link {
@@ -25,4 +41,11 @@
   color: $page-background;
   background-color: $common-style;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    color: $main-text;
+    background-color: $page-background;
+  }
 }

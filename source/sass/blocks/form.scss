@@ -1,6 +1,19 @@
+.form__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .form__fieldset {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding: 24px 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form__fieldset::before {
@@ -10,16 +23,32 @@
   height: 1px;
   background-color: $decorate-color;
   top: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    width: 1px;
+  }
+}
+
+.form__fieldset:nth-child(odd)::before {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .form__title {
   margin: 0;
   padding: 0;
+  width: 100%;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .form__label {
@@ -48,6 +77,10 @@
 }
 
 .form__emotions-description {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 768px;
   padding: 16px;
   border: none;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -60,6 +93,18 @@
 
 .form__emotions-description::placeholder {
   color: rgba($main-text, 0.3);
+}
+
+.form__send-container {
+  max-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .form__legend {
