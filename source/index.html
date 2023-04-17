@@ -12,21 +12,16 @@
           <a class="main-header__logo" href="./index.html">
             <img src="./img/logo.svg" alt="Логотип Седоны." width="185" height="96">
           </a>
-          <nav class="main-navigation">
+          <nav class="main-navigation main-navigation--nojs main-navigation--closed">
             <button class="main-navigation__toggle" type="button">
               <span class="visually-hidden">Меню</span>
-              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
-                <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
-                <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
-              </svg>
             </button>
             <div class="main-navigation__wrapper">
               <ul class="main-navigation__list">
                 <li class="main-navigation__item">
                   <a class="main-navigation__link" href="./index.html">Главная</a>
                 </li>
-                <li class="main-navigation__item">
+                <li class="main-navigation__item main-navigation__item--centered">
                   <a class="main-navigation__link" href="./catalog.html">ФОТО И ВИДЕО</a>
                 </li>
                 <li class="main-navigation__item">
@@ -54,8 +49,7 @@
             </header>
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--big">
-                <span class="advantages__triangles"></span>
-                <div class="advantages__container">
+                <div class="advantages__container advantages__container--decorated">
                   <b class="advantages__headline">НАСТОЯЩИЙ ГОРОДОК</b>
                   <span class="advantages__number">— №1 —</span>
                   <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
@@ -154,5 +148,6 @@
           </div>
         </div>
       </footer>
+      <script src="./script.js"></script>
     </body>
   </html>

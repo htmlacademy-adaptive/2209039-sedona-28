@@ -41,3 +41,8 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   appearance: textfield;
 }
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}

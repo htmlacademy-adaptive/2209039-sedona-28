@@ -9,11 +9,15 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 1200px;
-  padding: 0 20px;
   background-color: $page-background;
 }
 
 .main-header__logo {
+  position: absolute;
+  min-width: 185px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
 
@@ -22,5 +26,6 @@
     top: 0;
     left: 50%;
     transform: translate(-50%);
+    z-index: 1;
   }
 }

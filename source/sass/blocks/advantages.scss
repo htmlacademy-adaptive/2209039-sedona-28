@@ -1,18 +1,3 @@
-.advantages__triangles {
-  display: none;
-
-  @media (max-width: $phone-width) {
-    display: block;
-    margin-bottom: auto;
-    width: 100%;
-    min-height: 37px;
-    background-image: url("../../img/index/advantages-triangles.svg");
-    background-color: $common-style;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
 .advantages__slogan {
   margin: 0;
   padding: 0 24px;
@@ -45,7 +30,7 @@
 }
 
 .advantages__item--big {
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media (max-width: calc($max-phone)) {
     display: flex;
     flex-direction: column;
   }
@@ -60,6 +45,15 @@
 .advantages__container {
   padding: 33px 18px 40px;
   background-color: $common-style;
+}
+
+.advantages__container--decorated {
+  @media (max-width: calc($tablet-width - 1px)) {
+    padding-top: 37px;
+    background-image: url("../../img/index/advantages-triangles.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
 }
 
 .advantages__headline {
