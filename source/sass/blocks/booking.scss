@@ -7,6 +7,7 @@
 
 .booking__headline {
   margin: 0;
+  margin-bottom: 26px;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -18,7 +19,9 @@
 }
 
 .booking__text {
+  text-align: center;
   margin: 0;
+  margin-bottom: 32px;
   color: $description-text;
 }
 
@@ -28,4 +31,9 @@
 
 .booking__map {
   width: 100%;
+}
+
+.booking__button {
+  width: 100%;
+  max-width: 458px;
 }

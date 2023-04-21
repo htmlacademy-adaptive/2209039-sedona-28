@@ -29,3 +29,9 @@
     z-index: 1;
   }
 }
+
+.main-header--nojs {
+  @media (max-width: $max-phone) {
+    position: inherit;
+  }
+}

@@ -1,10 +1,28 @@
 .inner-list {
   @include list-reset;
   padding: 25px 18px 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    min-height: 330px;
+  }
+}
+
+.inner-list__item {
+  box-sizing: border-box;
+  padding-top: 8px;
+  padding-left: 47px;
+
+  @media (min-width: $tablet-width) {
+    padding: 156px 37px 20px;
+    text-align: center;
+    background-position: 50% 60px;
   }
 }
 
@@ -24,6 +42,8 @@
 }
 
 .inner-list__headline {
+  display: block;
+  margin-bottom: 16px;
   line-height: 26px;
   text-transform: uppercase;
 
@@ -37,4 +57,10 @@
   font-size: 14px;
   text-transform: uppercase;
   color: $description-text;
+}
+
+.inner-list__description--in-town br {
+  @media (max-width: $max-phone) {
+    display: none;
+  }
 }
