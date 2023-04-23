@@ -1,9 +1,29 @@
 .hero-block {
+  position: relative;
   margin: 0 auto;
   width: 100%;
+  min-height: 389px;
   max-width: 1200px;
+  background-color: #979797;
   background-image: url("../../img/hero-background.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    min-height: 518px;
+  }
+}
+
+.hero-block--main-form,
+.hero-block--catalog {
+  min-height: 158px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 301px;
+  }
 }
 
 .hero-block__image {
@@ -29,12 +49,14 @@
   }
 }
 
-.hero-block__triangles {
-  display: block;
+.hero-block::before {
+  content: "";
+  position: absolute;
   width: 100%;
   min-height: 57px;
   margin-top: auto;
   background-image: url("../../img/hero-triangles.svg");
   background-repeat: no-repeat;
   background-position: center;
+  bottom: 0;
 }
