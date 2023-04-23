@@ -7,7 +7,7 @@ headerWrapper.classList.remove('main-header--nojs');
 
 navMain.classList.remove('main-navigation--nojs');
 
-bookingMap.classList.remove('booking__map-container--nojs');
+bookingMap?.classList.remove('booking__map-container--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-navigation--closed')) {

@@ -114,6 +114,17 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition-duration: 0.3s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-photo__like-button path {
