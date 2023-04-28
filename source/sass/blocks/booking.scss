@@ -29,10 +29,6 @@
   position: relative;
   width: 100%;
   min-height: 350px;
-  background-image: url("../../img/index/map.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .booking__map-container--nojs::before {
@@ -49,9 +45,20 @@
 }
 
 .booking__map {
+  position: relative;
   width: 100%;
   display: block;
   border: none;
+  z-index: 1;
+}
+
+.booking__map-picture {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .booking__button {

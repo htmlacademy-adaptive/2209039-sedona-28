@@ -96,11 +96,16 @@
 }
 
 .advantages__image {
+  object-fit: cover;
   flex-grow: 1;
+
+  @media (max-width: $max-phone) {
+    width: 100%;
+  }
 }
 
 .advantages__container--decorated {
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media (max-width: $max-phone) {
     padding-top: 37px;
     background-image: url("../../img/index/advantages-triangles.svg");
     background-repeat: no-repeat;

@@ -5,11 +5,24 @@
   min-height: 389px;
   max-width: 1200px;
   background-color: #979797;
-  background-image: url("../../img/hero-background.jpg");
+  background-image: url("../../img/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 0;
+  object-fit: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/hero-bg-desktop@2x.jpg");
+    background-size: 901px auto;
+  }
 
   @media (min-width: $tablet-width) {
+    background-image: url("../../img/hero-bg-desktop.jpg");
+    background-size: 1200px auto;
     min-height: 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/hero-bg-desktop@2x.jpg");
+    }
   }
 }
 

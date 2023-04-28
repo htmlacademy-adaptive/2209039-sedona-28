@@ -3,7 +3,7 @@ let navToggle = document.querySelector('.main-navigation__toggle');
 let headerWrapper = document.querySelector('.main-header__logo');
 let bookingMap = document.querySelector('.booking__map-container');
 
-headerWrapper.classList.remove('main-header--nojs');
+headerWrapper.classList.remove('main-header__logo--nojs');
 
 navMain.classList.remove('main-navigation--nojs');
 

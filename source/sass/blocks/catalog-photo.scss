@@ -13,6 +13,7 @@
 }
 
 .catalog-photo__item {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -40,6 +41,9 @@
 }
 
 .catalog-photo__image {
+  object-fit: cover;
+  width: 100%;
+
   @media (max-width: $max-phone) {
     margin: 0 auto;
   }

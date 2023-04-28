@@ -290,7 +290,19 @@
 }
 
 .form__check-label:hover .form__check-area path,
-.form__check-label:hover .form__check-area rect {
+.form__check-label:hover .form__check-area rect,
+.form__questionnaire:focus ~ .form__check-area path,
+.form__questionnaire:focus ~ .form__check-area rect {
+  fill: $decorate-color;
+  transition-duration: 0.3s;
+}
+
+.form__control-container:focus {
+  padding: 100px;
+}
+
+.form__questionnaire:focus ~ .form__check-area path,
+.form__questionnaire:focus ~ .form__check-area rect {
   fill: $decorate-color;
   transition-duration: 0.3s;
 }
