@@ -2,7 +2,14 @@ html {
   height: 100%;
 }
 
-body {
+.page-body {
+  margin: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.page-body__wrapper {
+  height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -13,6 +20,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 fieldset {
@@ -40,4 +49,9 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
   appearance: textfield;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }

@@ -1,11 +1,46 @@
 .button {
+  box-sizing: border-box;
   display: inline-flex;
+  min-height: 58px;
+  padding: 0 20px;
   justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-decoration: none;
   text-transform: uppercase;
+  color: $page-background;
+  background-color: $common-style;
+  border: none;
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover;
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba($page-background, 0.3);
+    background-color: $button-active;
+  }
+
+  &:disabled {
+    background-color: $decorate-color;
+  }
+}
+
+.button--social {
+  box-sizing: border-box;
+  padding: 0;
+  display: inline-flex;
+  min-width: 48px;
+  min-height: 48px;
+  justify-content: center;
+  align-items: center;
   color: $page-background;
   background-color: $common-style;
   border: none;

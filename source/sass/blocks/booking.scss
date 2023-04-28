@@ -7,6 +7,7 @@
 
 .booking__headline {
   margin: 0;
+  margin-bottom: 26px;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -18,14 +19,49 @@
 }
 
 .booking__text {
+  text-align: center;
   margin: 0;
+  margin-bottom: 32px;
   color: $description-text;
 }
 
 .booking__map-container {
+  position: relative;
   width: 100%;
+  min-height: 350px;
+}
+
+.booking__map-container--nojs::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: $common-style;
+  border: 5px solid $page-background;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .booking__map {
+  position: relative;
   width: 100%;
+  display: block;
+  border: none;
+  z-index: 1;
+}
+
+.booking__map-picture {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.booking__button {
+  width: 100%;
+  max-width: 458px;
 }

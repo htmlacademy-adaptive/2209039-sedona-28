@@ -6,4 +6,16 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $main-text;
+  transition-duration: 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $common-style;
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

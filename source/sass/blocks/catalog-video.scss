@@ -1,3 +1,32 @@
+.catalog-video__wrapper {
+  @media (max-width: $max-phone) {
+    padding: 17px 20px 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 200px 84px;
+  }
+}
+
+.catalog__headline {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.catalog-video__text {
+  padding: 0 2px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+}
+
 .catalog-video__container {
   position: relative;
   display: flex;

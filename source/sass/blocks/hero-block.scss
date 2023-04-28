@@ -1,20 +1,75 @@
 .hero-block {
+  position: relative;
+  margin: 0 auto;
   width: 100%;
-  background-image: url("../../img/hero-background.jpg");
+  min-height: 389px;
+  max-width: 1200px;
+  background-color: #979797;
+  background-image: url("../../img/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 0;
+  object-fit: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/hero-bg-desktop@2x.jpg");
+    background-size: 901px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/hero-bg-desktop.jpg");
+    background-size: 1200px auto;
+    min-height: 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/hero-bg-desktop@2x.jpg");
+    }
+  }
+}
+
+.hero-block--main-form,
+.hero-block--catalog {
+  min-height: 158px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 301px;
+  }
 }
 
 .hero-block__image {
   display: block;
   margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 77px;
+  }
 }
 
-.hero-block__triangles {
-  display: block;
+.hero-block__image--secondary {
+  @media (min-width: $tablet-width) {
+    margin-top: 95px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 100px;
+    margin-bottom: 65px;
+  }
+}
+
+.hero-block::before {
+  content: "";
+  position: absolute;
   width: 100%;
   min-height: 57px;
   margin-top: auto;
   background-image: url("../../img/hero-triangles.svg");
   background-repeat: no-repeat;
   background-position: center;
+  bottom: 0;
 }
