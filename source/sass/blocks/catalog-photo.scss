@@ -41,11 +41,18 @@
 }
 
 .catalog-photo__image {
+  display: block;
   object-fit: cover;
   width: 100%;
 
   @media (max-width: $max-phone) {
     margin: 0 auto;
+  }
+}
+
+.catalog-photo__image--big {
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
   }
 }
 

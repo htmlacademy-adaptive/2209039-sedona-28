@@ -95,13 +95,19 @@
   }
 }
 
+.advantages__image-container {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: calc((100%/3) * 2);
+  }
+}
+
 .advantages__image {
+  width: 100%;
+  display: block;
   object-fit: cover;
   flex-grow: 1;
-
-  @media (max-width: $max-phone) {
-    width: 100%;
-  }
 }
 
 .advantages__container--decorated {

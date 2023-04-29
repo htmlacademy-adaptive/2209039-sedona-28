@@ -35,7 +35,35 @@
 
 .catalog-video__file {
   width: 100%;
+  min-height: 177px;
+  height: auto;
   max-width: 800px;
+  background-image: url("../../img/catalog/video-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/catalog/video-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 500px;
+    background-image: url("../../img/catalog/video-tablet.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/video-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/catalog/video-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/video-desktop@2x.jpg");
+    }
+  }
 }
 
 .catalog-video__arrow {

@@ -29,6 +29,7 @@
 .hero-block--main-form,
 .hero-block--catalog {
   min-height: 158px;
+  background-position-y: bottom;
 
   @media (min-width: $tablet-width) {
     min-height: 290px;
@@ -47,10 +48,14 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 77px;
+    width: 456px;
+    height: auto;
   }
 }
 
 .hero-block__image--secondary {
+  margin-top: 50px;
+
   @media (min-width: $tablet-width) {
     margin-top: 95px;
     margin-bottom: 60px;
