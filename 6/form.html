@@ -1,0 +1,243 @@
+  <!DOCTYPE html>
+  <html class="page" lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=width-device, initial-scale=1">
+      <title>Седона: Форма</title>
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="icon" href="favicon.ico">
+      <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
+      <link rel="manifest" href="manifest.webmanifest">
+      <base href="https://htmlacademy-adaptive.github.io/2209039-sedona-28/6/">
+</head>
+    <body class="page-body">
+      <div class="page-body__wrapper">
+        <header class="main-header">
+          <div class="main-header__wrapper">
+            <a class="main-header__logo main-header--nojs" href="./index.html">
+              <img src="./img/logo.svg" alt="Логотип Седоны." width="185" height="96">
+            </a>
+            <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+              <button class="main-navigation__toggle" type="button">
+               <span class="visually-hidden">Меню</span>
+             </button>
+             <div class="main-navigation__wrapper">
+                <ul class="main-navigation__list">
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link main-navigation__link--current" href="./index.html">Главная</a>
+                  </li>
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="./catalog.html">ФОТО И ВИДЕО</a>
+                  </li>
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="./form.html">Форма отзыва</a>
+                  </li>
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <main class="main-container main-form">
+          <div class="catalog__hero-block hero-block hero-block--catalog">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/catalog/welcome-catalog-image-tablet.svg">
+              <img class="catalog__hero-block-image hero-block__image hero-block__image--secondary" src="./img/catalog/welcome-catalog-image-mobile.svg" width="229" height="39" alt="Wlecome to the gorgeous SEDONA.">
+            </picture>
+          </div>
+          <section class="main-form__section">
+            <div class="main-form__header form-header">
+              <h1 class="main-form__headline">Оставьте свой отзыв</h1>
+              <p class="main-form__intro-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            </div>
+            <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="form__container">
+              <div class="form__fieldset form__fieldset--name">
+                  <h2 class="form__title">Представьтесь:</h2>
+                  <label class="form__label" for="first-name">
+                    <span class="form__label-text">ИМЯ*:</span>
+                    <input class="form__input" type="text" name="first-name" id="first-name" placeholder="Имя" required>
+                  </label>
+                  <label class="form__label" for="last-name">
+                    <span class="form__label-text">ФАМИЛИЯ*:</span>
+                    <input class="form__input" type="text" name="last-name" id="last-name" placeholder="Фамилия" required>
+                  </label>
+                  <label class="form__label" for="patronymic">
+                    <span class="form__label-text">Отчество:</span>
+                    <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Отчество">
+                  </label>
+                  </div>
+                <div class="form__fieldset form__fieldset--contacts">
+                  <h2 class="form__title">Контактная информация:</h2>
+                  <label class="form__label form__label--phone" for="phone">
+                    <span class="form__label-text">Контактный телефон*:</span>
+                    <input class="form__input form__input--pictured" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
+                  </label>
+                  <label class="form__label form__label--mail" for="email">
+                    <span class="form__label-text">Электронная почта*:</span>
+                    <input class="form__input form__input--pictured" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                  </label>
+                </div>
+              </div>
+                <div class="form__fieldset form__fieldset--impression">
+                  <h2 class="form__title form__title--decorated">
+                    <span class="form__title-text">ВАше Общее впечатление:</span>
+                    </h2>
+                  <label class="form__check-label form__check-label--radio">
+                    <input class="form__questionnaire radio visually-hidden" type="radio" name="impression-evaluation" value="positive" checked>
+                    <span class="form__control-container form__control-container--radio">
+                      <svg class="form__check-area" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0002 0C35.7027 0 46 10.2993 46 23C46 35.7038 35.7027 46 23.0002 46C10.2976 46 0 35.7038 0 23C0 10.2993 10.2976 0 23.0002 0Z" fill="#F2F2F2"/>
+                      </svg>
+                    </span>
+                    Скорее положительное
+                  </label>
+                  <label class="form__check-label form__check-label--radio">
+                    <input class="form__questionnaire radio visually-hidden" type="radio" name="impression-evaluation" value="negative">
+                    <span class="form__control-container form__control-container--radio">
+                      <svg class="form__check-area" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0002 0C35.7027 0 46 10.2993 46 23C46 35.7038 35.7027 46 23.0002 46C10.2976 46 0 35.7038 0 23C0 10.2993 10.2976 0 23.0002 0Z" fill="#F2F2F2"/>
+                      </svg>
+                    </span>
+                    Скорее отрицательное
+                  </label>
+                  <label class="form__check-label form__check-label--radio">
+                    <input class="form__questionnaire radio visually-hidden" type="radio" name="impression-evaluation" value="difficult to answer">
+                    <span class="form__control-container form__control-container--radio">
+                      <svg class="form__check-area" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0002 0C35.7027 0 46 10.2993 46 23C46 35.7038 35.7027 46 23.0002 46C10.2976 46 0 35.7038 0 23C0 10.2993 10.2976 0 23.0002 0Z" fill="#F2F2F2"/>
+                      </svg>
+                    </span>
+                    Затрудняюсь ответить
+                  </label>
+                </div>
+                <div class="form__fieldset form__fieldset--sightseeing">
+                  <h2 class="form__title form__title--decorated">
+                    <span class="form__title-text">посещенные <br>достопримечательности:</span>
+                  </h2>
+                  <label class="form__check-label form__check-label--checkbox">
+                    <input class="form__questionnaire checkbox visually-hidden" type="checkbox" name="visited-sightseeing" value="Мост Дьявола" checked>
+                    <span class="form__control-container form__control-container--checkbox">
+                      <svg class="form__check-area" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="46" height="46" rx="4" fill="#F2F2F2"/>
+                      </svg>
+                      <svg class="form__checkbox-icon" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" fill="#333333"/>
+                      </svg>
+                    </span>
+                    Мост Дьявола
+                  </label>
+                  <label class="form__check-label form__check-label--checkbox">
+                    <input class="form__questionnaire checkbox visually-hidden" type="checkbox" name="visited-sightseeing" value="Гора-Колокол" checked>
+                    <span class="form__control-container form__control-container--checkbox">
+                      <svg class="form__check-area" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="46" height="46" rx="4" fill="#F2F2F2"/>
+                      </svg>
+                      <svg class="form__checkbox-icon" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" fill="#333333"/>
+                      </svg>
+                    </span>
+                    Гора-Колокол
+                  </label>
+                  <label class="form__check-label form__check-label--checkbox">
+                    <input class="form__questionnaire checkbox visually-hidden" type="checkbox" name="visited-sightseeing" value="Слайд-парк" checked>
+                    <span class="form__control-container form__control-container--checkbox">
+                      <svg class="form__check-area" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="46" height="46" rx="4" fill="#F2F2F2"/>
+                      </svg>
+                      <svg class="form__checkbox-icon" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" fill="#333333"/>
+                      </svg>
+                    </span>
+                    Слайд-парк
+                  </label>
+                  <label class="form__check-label form__check-label--checkbox">
+                    <input class="form__questionnaire checkbox visually-hidden" type="checkbox" name="visited-sightseeing" value="Красные скалы">
+                    <span class="form__control-container form__control-container--checkbox">
+                      <svg class="form__check-area" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="46" height="46" rx="4" fill="#F2F2F2"/>
+                      </svg>
+                      <svg class="form__checkbox-icon" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.8053 1.30662L20.759 0.22188C20.4736 -0.0739599 19.9029 -0.0739599 19.6176 0.22188L8.29884 11.9569L2.40167 5.84283C2.11633 5.54699 1.54563 5.54699 1.26028 5.84283L0.21401 6.92758C-0.0713367 7.22342 -0.0713367 7.8151 0.21401 8.11094L7.63303 15.8028C7.82326 16 8.01349 16 8.20373 16C8.39396 16 8.58419 15.9014 8.77442 15.8028L21.615 2.48999C22.0906 2.19415 22.0906 1.70108 21.8053 1.30662Z" fill="#333333"/>
+                      </svg>
+                    </span>
+                    Красные скалы
+                  </label>
+                </div>
+                <div class="form__fieldset form__fieldset--emotions">
+                  <h2 class="form__title form__title--decorated">
+                    <span class="form__title-text">Опишите свои эмоции:</span>
+                  </h2>
+                  <textarea class="form__emotions-description" name="Эмоции от посещения Седоны" id="emotions-description" cols="30" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
+                </div>
+                <div class="form__send-container">
+                  <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+                  <small class="form__legend">* — обязательные поля</small>
+                </div>
+              </form>
+            </section>
+        </main>
+        <footer class="main-footer">
+          <div class="main-footer__wrapper">
+            <div class="main-footer__hashtag">#visitSEDONA</div>
+            <div class="main-footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--vk button button--social" href="https://vk.com/htmlacademy">
+                    <svg class="social__icon" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" fill="white"/>
+                    </svg>
+                    <span class="visually-hidden">Вконтакте</span>
+                </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--telegram button button--social" href="https://t.me/htmlacademy">
+                    <svg class="social__icon" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36427 16.0695C9.10627 16.3275 8.89102 16.5428 8.39377 16.5428L8.74102 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02227 10.314L1.25977 8.823C0.224021 8.49975 0.205271 7.78725 1.47577 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" fill="white"/>
+                    </svg>
+                    <span class="visually-hidden">Telegram</span>
+                 </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--youtube button button--social" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+                    <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" fill="white"/>
+                    </svg>
+                    <span class="visually-hidden">YouTube</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-footer__copyright copyright">
+              <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
+                Разработано
+                <span class="visually-hidden">htmlacademy</span>
+                <svg width="27" height="36" viewBox="0 0 27 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.65 0.949951H13.55L0.0500488 2.34995V27.05L13.55 35.0499L26.95 27.05V2.34995L13.65 0.949951ZM25.05 13.05L13.55 6.24995V6.14995H13.45L13.35 6.04995V6.14995L1.95005 13.05V4.04995L13.45 2.84995L25.05 4.04995V13.05ZM13.45 7.74995L24.95 14.45L20.45 17.05L13.35 12.85V14.25L19.25 17.75L18.35 18.25L13.35 15.25V16.65L17.15 18.95L16.35 19.45L13.35 17.65V19.05L15.25 20.15L13.45 21.25L2.05005 14.55L13.45 7.74995ZM1.95005 16.05L13.35 22.85V23.85L5.45005 19.15V20.55L13.45 25.35V26.45L5.45005 21.75V23.15L13.45 27.95L21.55 23.05V17.85L24.95 15.85V25.85L13.45 32.75L1.95005 25.95V16.05Z" fill="currentColor"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </footer>
+        <div class="modal">
+          <div class="modal__window modal__window--error">
+            <b class="modal__title">ЧТО-ТО ПОШЛО <br>НЕ ТАК!</b>
+            <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+            <button class="modal__button button" type="button">OK</button>
+          </div>
+          <div class="modal__window modal__window--success">
+            <b class="modal__title modal__title--success">Ваш отзыв отправлен!</b>
+            <p class="modal__text modal__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="modal__button-area">
+            <button class="modal__button button" type="button">ЗАкРЫТЬ ОКНО</button>
+          </div>
+          </div>
+        </div>
+        </div>
+      <script src="./script.js"></script>
+    </body>
+  </html>
