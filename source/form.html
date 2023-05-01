@@ -5,6 +5,11 @@
       <meta name="viewport" content="width=width-device, initial-scale=1">
       <title>Седона: Форма</title>
       <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="icon" href="favicon.ico">
+      <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
+      <link rel="manifest" href="manifest.webmanifest">
     </head>
     <body class="page-body">
       <div class="page-body__wrapper">
@@ -37,8 +42,11 @@
           </div>
         </header>
         <main class="main-container main-form">
-          <div class="main-form__hero-block hero-block hero-block--main-form">
-            <img class="main-form__hero-block-image hero-block__image hero-block__image--secondary" src="./img/catalog/welcome-catalog-image.svg" width="229" height="39" alt="Wlecome to the gorgeous SEDONA.">
+          <div class="catalog__hero-block hero-block hero-block--catalog">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/catalog/welcome-catalog-image-tablet.svg">
+              <img class="catalog__hero-block-image hero-block__image hero-block__image--secondary" src="./img/catalog/welcome-catalog-image-mobile.svg" width="229" height="39" alt="Wlecome to the gorgeous SEDONA.">
+            </picture>
           </div>
           <section class="main-form__section">
             <div class="main-form__header form-header">
