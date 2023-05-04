@@ -29,16 +29,28 @@
 .inner-list__item--apartments {
   background-image: url("../../img/index/house-icon.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/index/house-tablet.svg");
+  }
 }
 
 .inner-list__item--food {
   background-image: url("../../img/index/food-icon.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/index/food-tablet.svg");
+  }
 }
 
 .inner-list__item--souvenirs {
   background-image: url("../../img/index/gift-icon.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/index/gift-tablet.svg");
+  }
 }
 
 .inner-list__headline {

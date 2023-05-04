@@ -3,3 +3,8 @@
   display: flex;
   gap: 6px;
 }
+
+.social__link:active .social__icon {
+  opacity: 0.3;
+  transition-duration: 0.3s;
+}

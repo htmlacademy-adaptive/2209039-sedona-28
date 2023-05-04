@@ -90,6 +90,7 @@
 .catalog-photo__like-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+    gap: 9px;
     align-items: center;
   }
 }
@@ -122,10 +123,19 @@
 }
 
 .catalog-photo__like-button {
+  width: 23px;
+  height: 23px;
+  mask-image: url("../../img/mask.svg#like-icon");
   border: none;
-  background-color: transparent;
+  background-color: $main-text;
+  opacity: 0.3;
   cursor: pointer;
   transition-duration: 0.3s;
+
+  @media (min-width: $desktop-width) {
+    background-color: $page-background;
+    opacity: 1;
+  }
 
   &:hover,
   &:focus {
