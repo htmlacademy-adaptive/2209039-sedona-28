@@ -9,7 +9,7 @@ import csso from 'postcss-csso';
 import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import del from 'del';
+import {deleteAsync} from 'del';
 
 // Styles
 
@@ -90,7 +90,7 @@ const copy = (done) => {
 // Clean
 
 export const clean = () => {
-  return del('build');
+  return deleteAsync('build');
 }
 
 // Server
