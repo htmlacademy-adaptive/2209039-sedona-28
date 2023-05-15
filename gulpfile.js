@@ -10,6 +10,7 @@ import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import {deleteAsync} from 'del';
+import terser from 'gulp-terser';
 
 // Styles
 
