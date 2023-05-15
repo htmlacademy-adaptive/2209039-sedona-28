@@ -9,8 +9,9 @@ import csso from 'postcss-csso';
 import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import {deleteAsync} from 'del';
+import { deleteAsync } from 'del';
 import terser from 'gulp-terser';
+import { stacksvg } from 'gulp-stacksvg';
 
 // Styles
 
@@ -74,6 +75,12 @@ const svg = () => {
   .pipe(gulp.dest('build/img'));
 }
 
+const svgstack = () => {
+  return gulp.src('source/img/sprite.svg')
+  .pipe(stacksvg({ output: 'stack' }))
+  .pipe(gulp.dest('build/img'));
+}
+
 // Copy
 
 const copy = (done) => {
@@ -127,6 +134,7 @@ const build = gulp.series(
     html,
     scripts,
     svg,
+    svgstack,
     createWebP
   )
 );
