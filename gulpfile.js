@@ -70,13 +70,8 @@ const createWebP = () => {
 // SVG
 
 const svg = () => {
-  return gulp.src('source/img/**/*.svg')
+  return gulp.src(['source/img/**/*.svg'])
   .pipe(svgo())
-  .pipe(gulp.dest('build/img'));
-}
-
-const svgstack = () => {
-  return gulp.src('source/img/sprite.svg')
   .pipe(stacksvg({ output: 'stack' }))
   .pipe(gulp.dest('build/img'));
 }
@@ -134,7 +129,6 @@ const build = gulp.series(
     html,
     scripts,
     svg,
-    svgstack,
     createWebP
   )
 );
