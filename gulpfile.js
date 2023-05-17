@@ -11,7 +11,6 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import { deleteAsync } from 'del';
 import terser from 'gulp-terser';
-import { stacksvg } from 'gulp-stacksvg';
 
 // Styles
 
@@ -70,9 +69,9 @@ const createWebP = () => {
 // SVG
 
 const svg = () => {
-  return gulp.src(['source/img/**/*.svg'])
+  return gulp.src(['source/img/**/*.svg',
+  '!source/img/sprite.svg'])
   .pipe(svgo())
-  .pipe(stacksvg({ output: 'stack' }))
   .pipe(gulp.dest('build/img'));
 }
 
@@ -82,7 +81,8 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*{.woff2,woff}',
     'source/*.ico',
-    'source/*.webmanifest'
+    'source/*.webmanifest',
+    'source/img/sprite.svg'
   ],{
     base: 'source'
   })
@@ -120,7 +120,7 @@ const watcher = () => {
 
 // Build
 
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
