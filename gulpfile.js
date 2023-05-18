@@ -14,7 +14,7 @@ import terser from 'gulp-terser';
 
 // Styles
 
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -143,8 +143,7 @@ export default gulp.series(
     styles,
     html,
     scripts,
-    svg,
-    createWebP
+    svg
   ),
   gulp.series(
     server,

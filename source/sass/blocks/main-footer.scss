@@ -30,4 +30,16 @@
   text-transform: uppercase;
   color: $main-text;
   text-decoration: none;
+  transition-duration: 0.3s;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.3;
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
