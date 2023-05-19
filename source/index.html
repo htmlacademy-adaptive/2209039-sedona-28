@@ -4,11 +4,12 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=width-device, initial-scale=1">
       <title>HTML Academy: Седона</title>
-      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/style.min.css">
       <link rel="icon" href="favicon.ico">
       <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
       <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
       <link rel="manifest" href="manifest.webmanifest">
+      <link rel="preload" href="./fonts/ptsans.woff2" as="font">
     </head>
     <body class="page-body">
       <div class="page-body__wrapper">
@@ -44,7 +45,7 @@
           <h1 class="visually-hidden">Городок Седона</h1>
           <div class="hero-block">
             <picture>
-              <source media="(min-width: 768px)" srcset="./img/index/welcome-image-tablet.svg">
+              <source media="(min-width: 768px)" width="461" height="350">
               <img class="hero-block__image" src="./img/index/welcome-image-mobile.svg" width="282" height="214" alt="Wlecome to the gorgeous SEDONA. Because the Grand Canyon sucks!">
             </picture>
           </div>
@@ -174,6 +175,6 @@
           </div>
         </footer>
       </div>
-      <script src="./script.js"></script>
+      <script src="./js/script.js"></script>
     </body>
   </html>
