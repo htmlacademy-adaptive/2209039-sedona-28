@@ -45,7 +45,7 @@
           <h1 class="visually-hidden">Городок Седона</h1>
           <div class="hero-block">
             <picture>
-              <source media="(min-width: 768px)" width="461" height="350">
+              <source media="(min-width: 768px)" srcset="./img/index/welcome-image-tablet.svg" width="461" height="350">
               <img class="hero-block__image" src="./img/index/welcome-image-mobile.svg" width="282" height="214" alt="Wlecome to the gorgeous SEDONA. Because the Grand Canyon sucks!">
             </picture>
           </div>
@@ -63,11 +63,13 @@
                     <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
                   </div>
                   <div class="advantages__image-container">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="./img/index/photo-city-1-desktop.jpg 1x, ./img/index/photo-city-1-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="./img/index/photo-city-1-tablet.jpg 1x, ./img/index/photo-city-1-tablet@2x.jpg 2x">
-                      <img class="advantages__image" src="./img/index/photo-city-1-mobile.jpg" srcset="./img/index/photo-city-1-mobile@2x.jpg 2x" width="320" height="260" alt=" Седона. Городской пейзаж.">
-                    </picture>
+                    <a class="advantages__image-full" href="#">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="./img/index/photo-city-1-desktop.jpg 1x, ./img/index/photo-city-1-desktop@2x.jpg 2x" width="800" height="256">
+                        <source media="(min-width: 768px)" srcset="./img/index/photo-city-1-tablet.jpg 1x, ./img/index/photo-city-1-tablet@2x.jpg 2x" width="512" height="256">
+                        <img class="advantages__image" src="./img/index/photo-city-1-mobile.jpg" srcset="./img/index/photo-city-1-mobile@2x.jpg 2x" width="320" height="260" alt=" Седона. Городской пейзаж.">
+                      </picture>
+                    </a>
                   </div>
                   <ul class="advantages__inner-list inner-list">
                     <li class="inner-list__item inner-list__item--apartments">
@@ -80,22 +82,24 @@
                     </li>
                     <li class="inner-list__item inner-list__item--souvenirs">
                       <b class="inner-list__headline inner-list__headline--in-town">СУВЕНИРЫ</b>
-                      <p class="inner-list__description inner-list__description--in-town">Не только китайского, но и местного производства!</p>
+                      <p class="inner-list__description inner-list__description--in-town">Не только китайского,<br> но и местного производства!</p>
                     </li>
                   </ul>
                 </li>
                 <li class="advantages__item advantages__item--big">
-                  <div class="advantages__image-container">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="./img/index/photo-city-2-desktop.jpg 1x, ./img/index/photo-city-2-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="./img/index/photo-city-2-tablet.jpg 1x, ./img/index/photo-city-2-tablet@2x.jpg 2x">
-                      <img class="advantages__image" src="./img/index/photo-city-2-mobile.jpg" srcset="./img/index/photo-city-2-mobile@2x.jpg 2x" width="320" height="260" alt=" Седона. Мост Дьявола.">
-                    </picture>
+                  <div class="advantages__image-container advantages__image-container--last-one">
+                    <a class="advantages__image-full" href="#">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="./img/index/photo-city-2-desktop.jpg 1x, ./img/index/photo-city-2-desktop@2x.jpg 2x" width="800" height="256">
+                        <source media="(min-width: 768px)" srcset="./img/index/photo-city-2-tablet.jpg 1x, ./img/index/photo-city-2-tablet@2x.jpg 2x" width="512" height="256">
+                        <img class="advantages__image" src="./img/index/photo-city-2-mobile.jpg" srcset="./img/index/photo-city-2-mobile@2x.jpg 2x" width="320" height="260" alt=" Седона. Мост Дьявола.">
+                      </picture>
+                    </a>
                   </div>
                     <div class="advantages__container">
                     <b class="advantages__headline">ТАМ ЕСТЬ Мост дьявола</b>
                     <span class="advantages__number">— №2 —</span>
-                    <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                    <p class="advantages__description">Да, по нему можно пройти! <br>Если вы осмелитесь, конечно</p>
                   </div>
                 </li>
                 <li class="advantages__item advantages__item--environment">
@@ -119,16 +123,17 @@
           <section class="booking">
             <div class="booking__wrapper">
               <h2 class="booking__headline">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-              <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+              <p class="booking__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
               <a class="booking__button button" href="#">Найти Гостиницу</a>
             </div>
               <div class="booking__map-container booking__map-container--nojs">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="./img/index/map-desktop.png 1x, ./img/index/map-desktop@2x.png 2x">
-                  <img class="booking__map-picture" src="./img/index/map.png" srcset="./img/index/map@2x.png 2x" alt="Как до нас добраться." width="320" height="350">
-                </picture>
-                  <iframe class="booking__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965405.7352356776!2d-113.51924113090938!3d35.29744878803766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1680367009387!5m2!1sru!2sru" width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <a class="booking__image-full" href="#">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/index/map-desktop.png 1x, ./img/index/map-desktop@2x.png 2x">
+                    <img class="booking__map-picture" src="./img/index/map.png" srcset="./img/index/map@2x.png 2x" alt="Как до нас добраться." width="320" height="350">
+                  </picture>
+                </a>
+                <iframe class="booking__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965405.7352356776!2d-113.51924113090938!3d35.29744878803766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1680367009387!5m2!1sru!2sru" width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
           </section>
         </main>

@@ -51,6 +51,10 @@
     width: 456px;
     height: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 82px;
+  }
 }
 
 .hero-block__image--secondary {

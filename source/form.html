@@ -15,14 +15,14 @@
       <div class="page-body__wrapper">
         <header class="main-header">
           <div class="main-header__wrapper">
-            <a class="main-header__logo main-header--nojs" href="./index.html">
+            <a class="main-header__logo main-header__logo--nojs" href="./index.html">
               <img src="./img/logo.svg" alt="Логотип Седоны." width="185" height="96">
             </a>
             <nav class="main-navigation main-navigation--closed main-navigation--nojs">
               <button class="main-navigation__toggle" type="button">
-               <span class="visually-hidden">Меню</span>
-             </button>
-             <div class="main-navigation__wrapper">
+                <span class="visually-hidden">Меню</span>
+              </button>
+              <div class="main-navigation__wrapper">
                 <ul class="main-navigation__list">
                   <li class="main-navigation__item">
                     <a class="main-navigation__link" href="./index.html">Главная</a>
@@ -42,10 +42,10 @@
           </div>
         </header>
         <main class="main-container main-form">
-          <div class="catalog__hero-block hero-block hero-block--catalog">
+          <div class="hero-block hero-block--catalog">
             <picture>
-              <source media="(min-width: 768px)" width="460" height="80">
-              <img class="catalog__hero-block-image hero-block__image hero-block__image--secondary" src="./img/catalog/welcome-catalog-image-mobile.svg" width="229" height="39" alt="Wlecome to the gorgeous SEDONA.">
+              <source media="(min-width: 768px)" srcset="./img/catalog/welcome-catalog-image-tablet.svg" width="460" height="80">
+              <img class="hero-block__image hero-block__image--secondary" src="./img/catalog/welcome-catalog-image-mobile.svg" width="229" height="39" alt="Wlecome to the gorgeous SEDONA.">
             </picture>
           </div>
           <section class="main-form__section">
@@ -171,7 +171,7 @@
                   <h2 class="form__title form__title--decorated">
                     <span class="form__title-text">Опишите свои эмоции:</span>
                   </h2>
-                  <textarea class="form__emotions-description" name="Эмоции от посещения Седоны" id="emotions-description" cols="30" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
+                  <textarea class="form__emotions-description" name="Эмоции от посещения Седоны" id="emotions-description" cols="30" rows="4" placeholder="Опишите подробно все свои восторги "></textarea>
                 </div>
                 <div class="form__send-container">
                   <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
@@ -181,7 +181,7 @@
             </section>
         </main>
         <footer class="main-footer">
-          <div class="main-footer__wrapper">
+          <div class="main-footer__wrapper main-footer__wrapper--form">
             <a class="main-footer__hashtag" href="#">#visitSEDONA</a>
             <div class="main-footer__social social">
               <ul class="social__list">

@@ -9,8 +9,9 @@
   align-items: center;
   gap: 30px;
   width: 100%;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 33px 0;
+  padding: 41px 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -19,6 +20,15 @@
 
     @media (min-width: $desktop-width) {
       padding: 36px 120px;
+    }
+  }
+
+  &--catalog,
+  &--form {
+    padding: 34px 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 35px 60px;
     }
   }
 }

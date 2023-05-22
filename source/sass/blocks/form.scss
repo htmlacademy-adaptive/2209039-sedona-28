@@ -2,7 +2,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,20 +23,23 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 24px 0;
 
   @media (max-width: $max-phone) {
     align-items: center;
+    padding: 24px 20px;
   }
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
-    gap: 16px;
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     gap: 28px;
+  }
+
+  &--emotions {
+    padding-bottom: 57px;
   }
 }
 
@@ -60,10 +63,12 @@
 }
 
 .form__fieldset--contacts {
+  padding-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     padding-left: 28px;
     border-left: 1px solid $decorate-color;
-    align-items: start;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,26 +82,35 @@
   }
 }
 
-.form__fieldset--impression,
-.form__fieldset--sightseeing {
-  @media (max-width: $max-phone) {
-    align-items: flex-start;
-  }
-
+.form__fieldset--impression {
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    padding-top: 35px;
   }
 }
 
 .form__fieldset--sightseeing {
   @media (min-width: $tablet-width) {
+    padding-top: 35px;
     gap: 32px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 64px;
+  }
+}
+
+.form__fieldset--impression,
+.form__fieldset--sightseeing {
+  @media (max-width: $max-phone) {
+    align-items: flex-start;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
@@ -114,10 +128,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin-bottom: 28px;
   }
 }
 
-.form__title--decorated br {
+.form__title--decorated > br {
   @media (max-width: $max-phone) {
     display: none;
   }
@@ -187,6 +202,7 @@
 }
 
 .form__label-text {
+  box-sizing: border-box;
   display: block;
   width: 100%;
   padding-left: 16px;
@@ -205,6 +221,7 @@
   line-height: 26px;
   background-color: $input-background;
   transition-duration: 0.3s;
+  appearance: textfield;
 
   &:hover {
     background-color: $decorate-color;
@@ -218,6 +235,7 @@
 }
 
 .form__input--pictured {
+  padding-left: 12px;
   padding-right: 68px;
 }
 
@@ -229,7 +247,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   min-height: 46px;
   font-weight: 700;
   line-height: 26px;
@@ -246,6 +264,10 @@
 }
 
 .form__check-label--checkbox {
+  @media (max-width: $max-phone) {
+    margin-bottom: 9px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 224px;
   }
@@ -291,8 +313,7 @@
 
 .form__check-label:hover .form__check-area path,
 .form__check-label:hover .form__check-area rect,
-.form__questionnaire:focus ~ .form__check-area path,
-.form__questionnaire:focus ~ .form__check-area rect {
+.form__check-label:focus-within .form__check-area rect {
   fill: $decorate-color;
   transition-duration: 0.3s;
 }
@@ -322,7 +343,8 @@
   margin: 0 auto;
   width: 100%;
   max-width: 768px;
-  padding: 16px;
+  padding: 11px;
+  padding-bottom: 25px;
   border: 4px solid $input-background;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -364,6 +386,7 @@
 
 .form__legend {
   margin-left: auto;
+  margin-top: 2px;
   font-size: 12px;
   text-transform: uppercase;
   color: rgba($description-text, 0.6);
@@ -405,6 +428,7 @@
 .form__button {
   @media (max-width: $max-phone) {
     max-width: 324px;
+    margin: 0 20px;
   }
 
   @media (min-width: $tablet-width) {

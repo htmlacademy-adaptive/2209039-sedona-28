@@ -11,7 +11,7 @@
 .advantages__slogan {
   margin: 0;
   margin-top: 32px;
-  margin-bottom: 47px;
+  margin-bottom: 37px;
   padding: 0 24px;
   font-size: 18px;
   line-height: 26px;
@@ -21,11 +21,11 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin-top: 47px;
-    margin-bottom: 36px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 59px;
+    margin-top: 61px;
   }
 }
 
@@ -83,7 +83,7 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  padding: 52px 18px 40px;
+  padding: 4px 18px 37px;
   background-color: $common-style;
 
   @media (max-width: $max-phone) {
@@ -92,6 +92,11 @@
 
   @media (min-width: $tablet-width) {
     width: calc(100% / 3);
+    padding: 53px 32px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 55px 30px;
   }
 }
 
@@ -100,6 +105,12 @@
 
   @media (min-width: $tablet-width) {
     width: calc((100%/3) * 2);
+  }
+}
+
+.advantages__image-container--last-one {
+  @media (max-width: $max-phone) {
+    order: 1;
   }
 }
 
@@ -129,6 +140,7 @@
   color: $page-background;
 
   @media (min-width: $tablet-width) {
+    max-width: 150px;
     font-size: 21px;
     margin: 0;
   }
@@ -140,7 +152,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 24px 0 25px;
+  padding: 0 0 25px;
   background-color: $list-background;
 
   @media (min-width: $tablet-width) {
@@ -155,10 +167,14 @@
 
 .advantages__headline--environment {
   color: $main-text;
+
+  @media (max-width: $max-phone) {
+    margin-top: 23px;
+  }
 }
 
 .advantages__number {
-  margin-top: 22px;
+  margin-top: 13px;
   font-size: 14px;
   color: $page-background;
 }
@@ -170,14 +186,30 @@
 .advantages__description {
   text-align: center;
   margin: 0;
-  margin-top: 33px;
+  margin-top: 17px;
   text-transform: uppercase;
   color: $page-background;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+  }
+}
+
+.advantages__description br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
 
 .advantages__description--environment {
   color: $description-text;
+
+  @media (max-width: $max-phone) {
+    max-width: 250px;
+  }
 }
 
 .advantages__item--environment:not(:last-child)::before {
