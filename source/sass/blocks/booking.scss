@@ -26,6 +26,10 @@
     font-size: 30px;
     margin-bottom: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .booking__text {

@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 71px;
+    gap: 21px;
   }
 }
 
@@ -34,14 +34,21 @@
     width: 100%;
   }
 
-  @media (min-width: $desktop-width) {
-    gap: 28px;
-  }
-
   &--emotions {
     padding-bottom: 57px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 18px;
+      padding-bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 51px;
+      padding-bottom: 26px;
+    }
   }
 }
+
 
 .form__fieldset::before {
   content: "";
@@ -80,22 +87,9 @@
   @media (min-width: $tablet-width) {
     padding-right: 28px;
   }
-}
-
-.form__fieldset--impression {
-  @media (min-width: $tablet-width) {
-    padding-top: 35px;
-  }
-}
-
-.form__fieldset--sightseeing {
-  @media (min-width: $tablet-width) {
-    padding-top: 35px;
-    gap: 32px;
-  }
 
   @media (min-width: $desktop-width) {
-    gap: 64px;
+    padding-right: 50px;
   }
 }
 
@@ -107,10 +101,36 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 0;
+    column-gap: 32px;
+  }
+}
+
+.form__fieldset--impression {
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    column-gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 28px;
+  }
+}
+
+.form__fieldset--sightseeing {
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 64px;
+    padding-top: 41px;
   }
 }
 
@@ -128,7 +148,19 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    margin-bottom: 28px;
+    margin-bottom: 27px;
+  }
+}
+
+.form__title--radio {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.form__title--checkbox {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
   }
 }
 
@@ -270,11 +302,12 @@
 
   @media (min-width: $tablet-width) {
     width: 224px;
+    padding-left: 32px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     width: auto;
-    max-width: 200px;
   }
 }
 
@@ -307,7 +340,7 @@
 
 .form__check-label--checkbox:nth-of-type(4n+1) {
   @media (min-width: $desktop-width) {
-    padding-left: 53px;
+    padding-left: 45px;
   }
 }
 
@@ -353,6 +386,10 @@
   background-color: $input-background;
   resize: none;
 
+  @media (min-width: $tablet-width) {
+    padding: 14px 11px 37px;
+  }
+
   &:hover {
     background-color: $decorate-color;
     border-color: $decorate-color;
@@ -390,6 +427,11 @@
   font-size: 12px;
   text-transform: uppercase;
   color: rgba($description-text, 0.6);
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+    font-size: 14px;
+  }
 }
 
 .form__control-container {
