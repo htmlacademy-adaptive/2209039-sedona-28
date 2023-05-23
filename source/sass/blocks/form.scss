@@ -2,11 +2,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: 12px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 71px;
+    gap: 21px;
   }
 }
 
@@ -23,22 +23,32 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 24px 0;
 
   @media (max-width: $max-phone) {
     align-items: center;
+    padding: 24px 20px;
   }
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
-    gap: 16px;
     width: 100%;
   }
 
-  @media (min-width: $desktop-width) {
-    gap: 28px;
+  &--emotions {
+    padding-bottom: 57px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 18px;
+      padding-bottom: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 51px;
+      padding-bottom: 26px;
+    }
   }
 }
+
 
 .form__fieldset::before {
   content: "";
@@ -46,6 +56,7 @@
   width: 100%;
   height: 1px;
   background-color: $decorate-color;
+  left: 0;
   top: 0;
 
   @media (min-width: $tablet-width) {
@@ -60,10 +71,12 @@
 }
 
 .form__fieldset--contacts {
+  padding-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     padding-left: 28px;
     border-left: 1px solid $decorate-color;
-    align-items: start;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,12 +88,17 @@
   @media (min-width: $tablet-width) {
     padding-right: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
+  }
 }
 
 .form__fieldset--impression,
 .form__fieldset--sightseeing {
   @media (max-width: $max-phone) {
     align-items: flex-start;
+    padding-bottom: 12px;
   }
 
   @media (min-width: $tablet-width) {
@@ -88,15 +106,32 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 0;
+    column-gap: 32px;
+  }
+}
+
+.form__fieldset--impression {
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    column-gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 28px;
+  }
 }
 
 .form__fieldset--sightseeing {
   @media (min-width: $tablet-width) {
-    gap: 32px;
+    padding-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 64px;
+    column-gap: 64px;
+    padding-top: 41px;
   }
 }
 
@@ -114,10 +149,23 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin-bottom: 27px;
   }
 }
 
-.form__title--decorated br {
+.form__title--radio {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.form__title--checkbox {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
+}
+
+.form__title--decorated > br {
   @media (max-width: $max-phone) {
     display: none;
   }
@@ -187,6 +235,7 @@
 }
 
 .form__label-text {
+  box-sizing: border-box;
   display: block;
   width: 100%;
   padding-left: 16px;
@@ -205,6 +254,7 @@
   line-height: 26px;
   background-color: $input-background;
   transition-duration: 0.3s;
+  appearance: textfield;
 
   &:hover {
     background-color: $decorate-color;
@@ -218,6 +268,7 @@
 }
 
 .form__input--pictured {
+  padding-left: 12px;
   padding-right: 68px;
 }
 
@@ -229,7 +280,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   min-height: 46px;
   font-weight: 700;
   line-height: 26px;
@@ -246,13 +297,18 @@
 }
 
 .form__check-label--checkbox {
+  @media (max-width: $max-phone) {
+    margin-bottom: 9px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 224px;
+    padding-left: 32px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     width: auto;
-    max-width: 200px;
   }
 }
 
@@ -285,14 +341,13 @@
 
 .form__check-label--checkbox:nth-of-type(4n+1) {
   @media (min-width: $desktop-width) {
-    padding-left: 53px;
+    padding-left: 45px;
   }
 }
 
 .form__check-label:hover .form__check-area path,
 .form__check-label:hover .form__check-area rect,
-.form__questionnaire:focus ~ .form__check-area path,
-.form__questionnaire:focus ~ .form__check-area rect {
+.form__check-label:focus-within .form__check-area rect {
   fill: $decorate-color;
   transition-duration: 0.3s;
 }
@@ -322,7 +377,8 @@
   margin: 0 auto;
   width: 100%;
   max-width: 768px;
-  padding: 16px;
+  padding: 11px;
+  padding-bottom: 25px;
   border: 4px solid $input-background;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -330,6 +386,10 @@
   line-height: 26px;
   background-color: $input-background;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 11px 37px;
+  }
 
   &:hover {
     background-color: $decorate-color;
@@ -364,9 +424,15 @@
 
 .form__legend {
   margin-left: auto;
+  margin-top: 2px;
   font-size: 12px;
   text-transform: uppercase;
   color: rgba($description-text, 0.6);
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+    font-size: 14px;
+  }
 }
 
 .form__control-container {
@@ -405,6 +471,7 @@
 .form__button {
   @media (max-width: $max-phone) {
     max-width: 324px;
+    margin: 0 20px;
   }
 
   @media (min-width: $tablet-width) {

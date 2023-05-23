@@ -10,8 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 370px;
-    padding-top: 100px;
+    padding: 100px 370px 75px;
   }
 }
 
@@ -29,16 +28,17 @@
 }
 
 .catalog__intro-text {
-  margin: 0;
-  margin-top: 36px;
-  margin-bottom: 25px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 12px;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
+    max-width: 446px;
+    margin-top: 32px;
   }
 }
 
